@@ -1,11 +1,20 @@
 import { api } from "./api";
 
+import {
+  ExplainRequest,
+  ExplainResponse,
+} from "../types/api";
+
 export const explainService = {
-  async explain(question: string) {
-    const response = await api.post("/explain/explain", {
-      question,
-    });
+  async explain(
+    payload: ExplainRequest
+  ): Promise<ExplainResponse> {
+    const response =
+      await api.post(
+        "/explain/explain",
+        payload
+      );
 
     return response.data;
   },
-}; 
+};

@@ -6,12 +6,18 @@ export interface Source {
 
 export interface ChatMessage {
   id: string;
-  role: "user" | "assistant";
+
+  role:
+    | "user"
+    | "assistant";
+
   content: string;
 
   confidence?: number;
 
   responseTime?: number;
+
+  cached?: boolean;
 
   sources?: Source[];
 
