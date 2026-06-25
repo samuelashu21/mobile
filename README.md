@@ -233,61 +233,8 @@ Provides:
 
 ---
 
-# 📂 Project Structure
-
-## Backend
-
-backend/
-
-├── app/
-
-│ ├── models/
-
-│ ├── routers/
-
-│ ├── schemas/
-
-│ ├── services/
-
-│ ├── utils/
-
-│ └── main.py
-
-├── final_model/
-
-├── medical_faiss.index
-
-├── retrieval_corpus.csv
-
-├── requirements.txt
-
-└── Dockerfile
-
----
-
-## Mobile Application
-
-mobile/
-
-├── app/
-
-├── components/
-
-├── screens/
-
-├── services/
-
-├── store/
-
-├── hooks/
-
-├── types/
-
-├── utils/
-
-└── assets/
-
----
+ 
+ 
 
 # 🔌 Backend API
 
